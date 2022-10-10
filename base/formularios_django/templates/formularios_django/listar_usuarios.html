@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>listar usuarios</title>
+</head>
+<body>
+    {% for data in data_list %}
+    <div>
+        <h1 style="color:green">{{ data.nome }}</h1>
+        <h2>data de nascimento: {{ data.data_nascimento }}</h2>
+        <h2>sexo: {{ data.sexo }}</h2>
+    </div>
+    {% endfor %}
+</body>
+</html>
